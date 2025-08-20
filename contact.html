@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Washington Hardware - Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="../Subtask3_JavaScript/script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Washington Hardware Logo" class="logo">
+    <h1>Contact Washington Hardware</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <p><b>Phone:</b> 063 708 7784</p>
+    <p><b>Address:</b> Washington Street, Tzaneen, 0876</p>
+    <button onclick="locateUser()">Find My Location</button>
+    <h3>Store Hours</h3>
+    <button onclick="showTodayHours()">Check Today's Hours</button>
+    <form id="contactForm" onsubmit="return validateContactForm(event)">
+      <label>Name: <input type="text" id="name"></label><br>
+      <label>Email: <input type="email" id="email"></label><br>
+      <label>Message: <textarea id="message"></textarea></label><br>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  <footer>© 2025 Washington Hardware · All rights reserved</footer>
+</body>
+</html>
